@@ -1,0 +1,11 @@
+:root {
+    --VeryDarkGray: hsl(0, 0%, 17%) --DarkGray: hsl(0, 0%, 59%)
+}
+
+body {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 375px) {}
