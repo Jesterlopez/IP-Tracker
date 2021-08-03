@@ -45,7 +45,7 @@ const generateMapa = (Lat, Lng, ip = "", location ="") => {
   var map = L.map("map").setView([Lat, Lng], 13);
 
   const iconMarker = L.icon({
-    iconUrl: '../images/icon-location.svg',
+    iconUrl: './images/icon-location.svg',
     iconSize: [46, 56] 
 });
 
