@@ -39,7 +39,7 @@ const ipNew = submit.addEventListener("click", (e) => {
 });
 
 const generateMapa = (Lat, Lng, ip = "", location ="") => {
-  document.getElementById("containerMap").innerHTML =
+  document.getElementById("weathermap").innerHTML =
     "<div id='map' style='width: 100%; height: 100%;'></div>";
 
   var map = L.map("map").setView([Lat, Lng], 13);
