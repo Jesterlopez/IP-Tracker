@@ -1,11 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
 :root {
-    --VeryDarkGray: hsl(0, 0%, 17%) --DarkGray: hsl(0, 0%, 59%)
+  --VeryDarkGray: hsl(0, 0%, 17%);
+  --DarkGray: hsl(0, 0%, 59%);
 }
 
-body {
-    font-size: 18px;
+body,
+input {
+  font-size: 18px;
+}
+.leaflet-top {
+  display: none;
 }
 
-@media screen and (max-width: 1440px) {}
+#map,
+#weathermap {
+  height: 444px;
+}
+@media screen and (max-width: 1440px) {
+  .container__header {
+    background-image: url(../images/pattern-bg.png);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__text {
+    color: #fff;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    display: flex;
+    width: 100%;
+  }
+  form {
+    width: 50%;
+  }
+  .header__inputSearch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  .header__inputSearch > input {
+    width: 40%;
+    position: relative;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .header__btnSearch {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+  }
+  .header__btnSearch input {
+    width: 100%;
+    padding: 0 25px;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background: #000;
+    cursor: pointer;
+  }
+  input:focus {
+    outline: none;
+  }
+  .header__btnSearch i {
+    position: absolute;
+    color: #fff;
+  }
+  .info__ubication {
+    width: 70%;
+    height: 120px;
+    background: #fff;
+    z-index: 9999;
+    position: absolute;
+    top: 30%;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  .info__ubication div {
+    width: calc(100% / 4);
+    border-left: 1px solid #c9c9c9;
+    padding: 10px 50px;
+    box-sizing: border-box;
+  }
+  .info__ubication div p {
+    color: #7c7c7c;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .info__ubication div h4 {
+    font-size: 1.3rem;
+  }
+}
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+}

@@ -1,19 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
 
-    <title>Frontend Mentor | IP Address Tracker</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <script
+      src="https://kit.fontawesome.com/2ec5080625.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
 
-<body>
-    <h1>Hello...</h1>
-</body>
-
+  <body>
+    <div class="container__header">
+      <div class="header__text">
+        <h1>IP Address Tracker</h1>
+      </div>
+      <form action="#">
+        <div class="header__inputSearch">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search for any IP address or domain"
+            value=""
+          />
+          <div class="header__btnSearch">
+            <input type="submit" id="submit" value="" />
+            <i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+      </form>
+      <div class="info__ubication">
+        <div class="ubication__address">
+          <p>ip address</p>
+          <h4 id="address">192.212.174.101</h4>
+        </div>
+        <div class="ubication__location">
+          <p>Location</p>
+          <h4 id="location">Brooklyn, NY 10001</h4>
+        </div>
+        <div class="ubication__timezone">
+          <p>Timezone</p>
+          <h4 id="timezone">UTC-05:00</h4>
+        </div>
+        <div class="ubication__isp">
+          <p>ISP</p>
+          <h4 id="isp">SpaceX Starlink</h4>
+        </div>
+      </div>
+    </div>
+    <div id="containerMap">
+      <div id="map"></div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
