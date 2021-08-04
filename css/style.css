@@ -175,6 +175,7 @@ input {
   .info__ubication div {
     width: 100%;
     border: none;
+    margin-bottom: 15px;
   }
 
   #weathermap {
