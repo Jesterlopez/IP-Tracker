@@ -21,6 +21,12 @@ input {
 #weathermap {
   height: 70vh;
 }
+@media screen and (min-width: 1440px) {
+  .container__header {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 /* @media screen and (max-width: 1440px) { */
 .container__header {
   background-image: url(../images/pattern-bg.png);
