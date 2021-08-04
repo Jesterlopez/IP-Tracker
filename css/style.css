@@ -29,6 +29,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2%;
   }
   .header__text {
     color: #fff;
@@ -38,6 +39,7 @@ input {
     height: 90px;
     display: flex;
     width: 100%;
+    margin-bottom: 20px;
   }
   form {
     width: 50%;
@@ -87,21 +89,20 @@ input {
   }
   .info__ubication {
     width: 70%;
-    height: 120px;
     background: #fff;
     z-index: 9999;
-    position: absolute;
-    top: 30%;
     border-radius: 10px;
     padding: 20px 20px;
     box-sizing: border-box;
     display: flex;
+    margin-top: 5%;
   }
   .info__ubication div {
     width: calc(100% / 4);
     border-left: 1px solid var(--DarkGray);
     padding: 0px 15px;
     box-sizing: border-box;
+    height: 100px;
   }
   .info__ubication div p {
     color: var(--DarkGray);
@@ -123,8 +124,15 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+  .header__text {
+    font-size: 1rem;
+  }
+  .container__header {
+    padding-top: 10%;
+  }
   form {
     width: 85%;
+    margin-top: 5%;
   }
   .info__ubication {
     height: auto;
@@ -132,12 +140,16 @@ input {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    top: 20%;
     width: 85%;
+    margin-top: 5%;
+  }
+  .info__ubication {
+    margin-top: 5%;
   }
 
   .info__ubication div {
     width: 100%;
+    height: auto;
     border: none;
   }
 
